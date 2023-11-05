@@ -12,7 +12,7 @@ Before you begin, make sure you have the following prerequisites in place:
 
 3. **Git**: Make sure you have Git installed on your local machine if you want to clone this repository.
    
-## Project Overview
+## Project Overview 
 
 This project focuses on creating a Docker file, Docker image, Docker container for a simple snake game web application using the Nginx web server. The snake game web application is composed of three files: `index.html`, `style.css`, and `main.js`. The Nginx web server is configured to serve these files on port 80. In summary, the primary objectives of this project include:
 
