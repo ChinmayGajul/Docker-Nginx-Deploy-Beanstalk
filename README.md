@@ -91,7 +91,7 @@ In the final step, we deploy the Docker container on AWS Elastic Beanstalk. This
 
 ![Snake Game Screenshot](snake_game_screenshot.png) 
 
-**Description of Website 1 :-**
+**Description of Web application :-**
 - This is a simple Snake game web application.
 - Players can control the snake using arrow keys and collect food to score points.
 - The game is hosted on AWS Elastic Beanstalk for online access.
