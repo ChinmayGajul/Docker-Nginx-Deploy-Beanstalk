@@ -23,13 +23,17 @@ This project focuses on creating a Docker file, Docker image, Docker container f
 
 
 ## Step 1: Clone the Repository
-First, clone this Git repository to your local machine using the following command:
+Before creating the Docker image, you need to obtain the web application files. If you have these files in a Git repository, you can clone the repository to your local machine. Here's how you can do it:
 
 ```bash
 https://github.com/ChinmayGajul/Docker-Nginx-Deploy-Beanstalk.git
 ```
 
 After cloning, navigate to the repository's directory containing the project files.
+```bash
+cd <repository_directory>
+```
+Once you have the files on your local machine, ensure that the necessary web application files (`index.html`, `style.css`, and `main.js`) are present.
 
 ## Step 2: Create a Dockerfile
 The Dockerfile is a crucial component of this project as it defines the steps required to create the Docker image. In this project, we utilize the nginx:alpine base image and copy the web application files into the container, expose port 80, and configure the Nginx server to run in the foreground,you will find the necessary web application files like `index.html`, `style.css`, and `main.js`. Create a Dockerfile named `Dockerfile` (without an extension) in the same directory. Here's a detailed breakdown of the Dockerfile:
