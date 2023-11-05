@@ -32,7 +32,7 @@ https://github.com/ChinmayGajul/Docker-Nginx-Deploy-Beanstalk.git
 After cloning, navigate to the repository's directory containing the project files.
 
 ## Step 2: Create a Dockerfile
-In the project directory, you will find the necessary web application files like `index.html`, `style.css`, and `main.js`. Create a Dockerfile named `Dockerfile` (without an extension) in the same directory with the following content:
+The Dockerfile is a crucial component of this project as it defines the steps required to create the Docker image. In this project, we utilize the nginx:alpine base image and copy the web application files into the container, expose port 80, and configure the Nginx server to run in the foreground,you will find the necessary web application files like `index.html`, `style.css`, and `main.js`. Create a Dockerfile named `Dockerfile` (without an extension) in the same directory. Here's a detailed breakdown of the Dockerfile:
 
 ```Dockerfile
 FROM nginx:alpine
@@ -45,6 +45,13 @@ EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
 ```
+
+The Dockerfile's instructions are organized as follows:
+
+- `FROM`: Specifies the base image (in this case, `nginx:alpine`).
+- `COPY`: Transfers the web application files into the container.
+- `EXPOSE`: Informs Docker that the container will listen on port 80.
+- `CMD`: Specifies the command to run when the container starts.
 
 This Dockerfile sets up an Nginx server and copies your web application files into the appropriate Nginx directory.
 
