@@ -26,7 +26,7 @@ This project focuses on creating a Docker file, Docker image, Docker container f
 First, clone this Git repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/ChinmayGajul/User-Docker-Nginx-Deploy-Beanstalk.git
+https://github.com/ChinmayGajul/Docker-Nginx-Deploy-Beanstalk.git
 ```
 
 After cloning, navigate to the repository's directory containing the project files.
