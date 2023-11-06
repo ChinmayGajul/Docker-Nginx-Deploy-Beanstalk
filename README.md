@@ -4,7 +4,7 @@ This repository contains a Docker project that deploys a simple Snake game web a
 
 # Snake Game Web Application
 
-### Website 1: [Custom-vsdcvid](http://3.128.118.224/)
+### Play Snake Game : https://chinmaygajul.github.io/Docker-Nginx-Deploy-Beanstalk/
 
 ![Snake Game Screenshot](snakegame.png) 
 
