@@ -63,7 +63,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 The Dockerfile's instructions are organized as follows:
 
-- `FROM`: Specifies the base image (in this case, `nginx:alpine`).
+- `FROM`: Specifies the base image (in this case, `nginx:latest`).
 - `RUN`: Executes a command during the Docker image build process.
 - `EXPOSE`: Informs Docker that the container will listen on port 80.
 - `CMD`: Specifies the command to run when the container starts.
@@ -98,12 +98,17 @@ In the final step, we deploy the Docker container on AWS Elastic Beanstalk. This
 
 3. **Create Application and Environment**: Create a new Elastic Beanstalk application and environment, specifying the necessary configuration, such as the platform, instance type, and scaling options.
 
-4. **Container Registry**: Upload your Docker image to a container registry, such as Amazon Elastic Container Registry (ECR), and push the image to the registry.
+4. **Environment Configuration**: Configure the environment as needed, providing a name, description, and selecting the desired platform. Choose the platform that matches your Docker image.
 
-5. **Environment Configuration**: Configure your Elastic Beanstalk environment to use your Docker image from the container registry. Ensure that you specify the image's repository and tag.
+5. **Deployment**: Deploy the application to Elastic Beanstalk. The service will use the Docker image and launch your web application.
 
-6. **Deployment**: Deploy the application to Elastic Beanstalk. The service will use the Docker image from your registry and launch your web application.
+## Step 6: Access the Deployed Snake Game
 
+Once the environment is created, Elastic Beanstalk will begin deploying your Docker image. This process may take a few minutes.
+
+After the deployment is complete, you can access the deployed 2048 game by navigating to the environment's URL provided in the Elastic Beanstalk console.
+
+Congratulations! You have successfully deployed the 2048 game on AWS Elastic Beanstalk using a Docker container.
 
 # Showcasing My Work
 
