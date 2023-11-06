@@ -39,21 +39,32 @@ Once you have the files on your local machine, ensure that the necessary web app
 The Dockerfile is a crucial component of this project as it defines the steps required to create the Docker image. In this project, we utilize the nginx:alpine base image and copy the web application files into the container, expose port 80, and configure the Nginx server to run in the foreground,you will find the necessary web application files like `index.html`, `style.css`, and `main.js`. Create a Dockerfile named `Dockerfile` (without an extension) in the same directory. Here's a detailed breakdown of the Dockerfile:
 
 ```Dockerfile
-FROM nginx:alpine
+F# Use an official Nginx image as the base image
+FROM nginx:latest
 
-COPY index.html /usr/share/nginx/html/index.html
-COPY style.css /usr/share/nginx/html/
-COPY main.js /usr/share/nginx/html/
+# Install Git
+RUN apt-get update && apt-get install -y git
 
+# Clone your Git repository
+RUN git clone https://github.com/ChinmayGajul/Docker-Nginx-Deploy-Beanstalk.git /tmp/repo
+
+# Move the repository contents to Nginx document root
+RUN mv /tmp/repo/* /usr/share/nginx/html/
+
+# Remove the temporary directory
+RUN rm -rf /tmp/repo
+
+# Expose port 80 (Nginx's default HTTP port)
 EXPOSE 80
 
+# Start the Nginx server in the foreground
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
 The Dockerfile's instructions are organized as follows:
 
 - `FROM`: Specifies the base image (in this case, `nginx:alpine`).
-- `COPY`: Transfers the web application files into the container.
+- `RUN`: Executes a command during the Docker image build process.
 - `EXPOSE`: Informs Docker that the container will listen on port 80.
 - `CMD`: Specifies the command to run when the container starts.
 
