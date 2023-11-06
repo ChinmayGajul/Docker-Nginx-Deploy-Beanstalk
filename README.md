@@ -6,13 +6,8 @@ This repository contains a Docker project that deploys a simple Snake game web a
 
 ### Play Snake Game : https://chinmaygajul.github.io/Docker-Nginx-Deploy-Beanstalk/
 
-![Snake Game Screenshot](snakegame.png) 
+![Snake Game Screenshot](snakegame.io.png) 
 
-**Description of Web application :-**
-- This is a simple Snake game web application.
-- Players can control the snake using arrow keys and collect food to score points.
-- The game is hosted on AWS Elastic Beanstalk for online access.
-  
 ## Prerequisites
 
 Before you begin, make sure you have the following prerequisites in place:
@@ -121,6 +116,16 @@ After the deployment is complete, you can access the deployed snake game by navi
 
 Congratulations! You have successfully deployed the snake game on AWS Elastic Beanstalk using a Docker container.
 
+# Showcasing My Work
+
+## Snake-Game
+
+![Snake-Game](snakegame.png)
+
+**Description of Web application :-**
+- This is a simple Snake game web application.
+- Players can control the snake using arrow keys and collect food to score points.
+- The game is hosted on AWS Elastic Beanstalk for online access.
 
 ## Clean Up
 
