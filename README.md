@@ -106,9 +106,9 @@ In the final step, we deploy the Docker container on AWS Elastic Beanstalk. This
 
 Once the environment is created, Elastic Beanstalk will begin deploying your Docker image. This process may take a few minutes.
 
-After the deployment is complete, you can access the deployed 2048 game by navigating to the environment's URL provided in the Elastic Beanstalk console.
+After the deployment is complete, you can access the deployed snake game by navigating to the environment's URL provided in the Elastic Beanstalk console.
 
-Congratulations! You have successfully deployed the 2048 game on AWS Elastic Beanstalk using a Docker container.
+Congratulations! You have successfully deployed the snake game on AWS Elastic Beanstalk using a Docker container.
 
 # Showcasing My Work
 
@@ -125,7 +125,7 @@ Congratulations! You have successfully deployed the 2048 game on AWS Elastic Bea
   
 ## Clean Up
 
-It's important to clean up your AWS resources when you're done to avoid incurring unnecessary charges. You can do this by deleting the ECS Service, Cluster, Task Definition, and ECR Repository.
+It's important to clean up your AWS resources when you're done to avoid incurring unnecessary charges. You can do this by deleting the application.
 
 ## Conclusion
 
